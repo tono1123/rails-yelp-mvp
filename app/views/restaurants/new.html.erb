@@ -1,0 +1,26 @@
+<h1>Restaurants#new</h1>
+  <br>
+  <br>
+
+
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+  <br>
+
+  <%= f.label :phone_number %>
+  <%= f.text_field :phone_number %>
+  <br>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+  <br>
+
+  <%= f.submit %>
+<% end %>
+<br>
+<div>
+<%= link_to "BACK ", restaurants_path(@restaurants)%>
+</div>

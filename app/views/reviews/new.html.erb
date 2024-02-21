@@ -1,0 +1,14 @@
+<div >
+  <h1 > Here is the list of the reviews 📃</h1>
+</div>
+
+
+<%= form_with model: @reviews do |f| %>
+  <%= f.label :rating %>
+  <%= f.text_field :rating %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "BACK ", restaurants_path%>

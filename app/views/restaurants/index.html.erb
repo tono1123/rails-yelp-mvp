@@ -1,0 +1,9 @@
+<h1>Restaurants#index</h1>
+
+<%= link_to "🆕", "restaurants/new" %>
+<br>
+<% @restaurants.each do |restaurant| %>
+<li>
+<%= link_to restaurant.name, restaurant_path(restaurant)%>
+</li>
+<% end %>
